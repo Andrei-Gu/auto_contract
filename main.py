@@ -118,7 +118,7 @@ def executing_all_actions():
         document_name_parts = (path_to_save,
                                replacing_forbidden_symbols(context['person_2_full_name']),
                                ' документ ',
-                               replacing_forbidden_symbols(context['contract_number']),
+                               replacing_forbidden_symbols(str(context['contract_number'])),
                                ' от ',
                                context['contract_signing_date'],
                                '.docx',
